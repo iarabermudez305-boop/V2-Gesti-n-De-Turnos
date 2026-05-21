@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Turnos</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- TITULO -->
+  <h1>Sistema de Gestión de Turnos</h1>
+
+  <!-- BOTON PAUSA -->
+  <button id="btnPausa">
+    Pausar Entrada
+  </button>
+
+
+  <div class="contenedorPrincipal">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="columnaIzquierda">
+  
+      <!-- PANEL -->
+      <div id="panelEntrada">
+  
+        <input
+          type="text"
+          id="inputNombre"
+          placeholder="Ingrese nombre"
+        >
+  
+        <button id="btnAnotar">
+          Anotar
+        </button>
+  
+        <button id="btnAtender">
+          Atender Siguiente
+        </button>
+  
+        <button id="btnReiniciar">
+          Reiniciar Día
+        </button>
+  
+      </div>
+  
+      <!-- LISTA -->
+      <div id="listaEspera">
+  
+        <h2>En espera:</h2>
+  
+        <p>
+          Personas en espera:
+          <span id="contador">0</span>
+        </p>
+  
+        <ul id="lista"></ul>
+  
+      </div>
+  
+    </div>
+  
+    <!-- VISOR -->
+    <div id="visor">
+  
+      <h2>Atendiendo:</h2>
+  
+      <p id="clienteActual">
+        ---
+      </p>
+  
+    </div>
+  
+  </div>
+
+  
+  <!-- SCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

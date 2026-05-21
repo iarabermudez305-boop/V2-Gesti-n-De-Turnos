@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #293241;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TITULO */
+h1 {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedorPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* COLUMNA IZQUIERDA */
+
+.columnaIzquierda {
+  display: flex;
+  flex-direction: column;
+}
+/* CONTENEDORES */
+#panelEntrada,
+#visor,
+#listaEspera {
+  background-color: #dbe4ea;
+  padding: 20px;
+  border-radius: 18px;
+  width: 340px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+#inputNombre {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #b0bec5;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* EFECTO INPUT */
+#inputNombre:focus {
+  border-color: #4ea8de;
+  box-shadow: 0 0 8px rgba(78,168,222,0.4);
+}
+
+/* BOTONES */
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+/* ANOTAR */
+#btnAnotar {
+  background-color: #4ea8de;
+}
+
+/* ATENDER */
+#btnAtender {
+  background-color: #3d5a80;
+}
+
+/* PAUSA */
+#btnPausa {
+  background-color: #577590;
+}
+
+/* REINICIAR */
+#btnReiniciar {
+  background-color: #293241;
+}
+
+/* EFECTOS */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  opacity: 0.95;
+}
+
+/* VISOR */
+#visor {
+  
+    background-color: #dbe4ea;
+    border: 3px solid #4ea8de;
+    padding: 40px;
+    border-radius: 20px;
+    width: 420px;
+    min-height: 300px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+#clienteActual {
+  font-size: 55px;
+  font-weight: bold;
+  color: #3d5a80;
+  margin-top: 20px;
+}
+
+
+/* LISTA */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #c9d6df;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* CONTADOR */
+#contador {
+  color: #3d5a80;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* PAUSADO */
+.pausado {
+  opacity: 0.5;
+  pointer-events: none;
+}
